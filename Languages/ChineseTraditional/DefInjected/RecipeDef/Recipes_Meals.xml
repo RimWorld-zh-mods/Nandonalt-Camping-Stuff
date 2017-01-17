@@ -2,7 +2,7 @@
 <LanguageData>
 
   <CookMealSimplePortableStove.label>烹調簡單的料理</CookMealSimplePortableStove.label>
-  <CookMealSimplePortableStove.description>用一種原料烹調四份簡單的料理。</CookMealSimplePortableStove.description>
+  <CookMealSimplePortableStove.description>用一種原料烹調一份簡單的料理。</CookMealSimplePortableStove.description>
   <CookMealSimplePortableStove.jobString>正在烹調簡單的料理。</CookMealSimplePortableStove.jobString>
 
   <ButcherCorpseFleshSpot.label>屠宰屍體</ButcherCorpseFleshSpot.label>
