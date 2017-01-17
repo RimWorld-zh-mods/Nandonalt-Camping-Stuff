@@ -571,13 +571,13 @@ namespace Nandonalt_CampingStuff
             }
             if (!myPawn.CanReserve(this.parent, 1))
             {
-                yield return new FloatMenuOption("Repair the tent" + " (" + "Reserved".Translate() + ")", null, MenuOptionPriority.Default, null, null, 0f, null, null);
+                yield return new FloatMenuOption("Camping.RepairTent".Translate() + " (" + "Reserved".Translate() + ")", null, MenuOptionPriority.Default, null, null, 0f, null, null);
             }
             else
             {
                 if (this.parent.HitPoints < this.parent.MaxHitPoints)
                 {
-                    FloatMenuOption floatMenuOptionRepair = new FloatMenuOption("Repair the tent (" + (this.parent.MaxHitPoints - this.parent.HitPoints).ToString() + " "+ this.parent.Stuff.label.Translate() + " needed)", delegate
+                    FloatMenuOption floatMenuOptionRepair = new FloatMenuOption("Camping.RepairTent".Translate() + " (" + "Camping.RepairNeeded".Translate((this.parent.MaxHitPoints - this.parent.HitPoints).ToString(), this.parent.Stuff.label) +")", delegate
                     {
                         if (myPawn.CanReserveAndReach(this.parent, PathEndMode.Touch, Danger.Deadly, 1))
                         {
